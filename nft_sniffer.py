@@ -62,6 +62,6 @@ class PortalsSniffer:
                 f"Bulk upsert → inserted={result.upserted_count}, "
                 f"modified={result.modified_count}"
             )
-
+ 
 addons = [PortalsSniffer()]
 print("data caught")
