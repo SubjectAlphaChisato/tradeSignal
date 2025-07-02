@@ -19,7 +19,7 @@ client     = MongoClient(MONGO_URI)
 collection = client[DB_NAME][COL_NFTS]
 collection.create_index("id", unique=True)        # enforce uniqueness
 
-TARGET_URL = "https://portals-market.com/api/market/actions/"
+TARGET_URL = "https://portals-market.com/api/market/actions"
 
 class PortalsSniffer:
     def response(self, flow: http.HTTPFlow):
@@ -64,4 +64,4 @@ class PortalsSniffer:
             )
  
 addons = [PortalsSniffer()]
-print("data caught")
+print("data caugh")
