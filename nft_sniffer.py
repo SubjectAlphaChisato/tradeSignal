@@ -64,4 +64,4 @@ class PortalsSniffer:
             )
  
 addons = [PortalsSniffer()]
-print("data caugh")
+print("data caught")
